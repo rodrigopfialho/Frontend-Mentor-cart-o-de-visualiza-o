@@ -1,0 +1,172 @@
+body {
+    width: 95vw;
+    height: 95vh;
+    background: #0a0c1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    border-radius: 10px;
+    display: flex;
+    background: #1c1938;
+    width: 70vw;
+    height: 55vh;
+}
+
+.text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text span{
+    font-size: 2.0em;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.text p {
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    opacity: 0.5;
+}
+
+.text ul {
+    display: flex;
+    
+}
+
+.text ul li {
+    list-style: none;
+    margin-right: 50px;
+    font-size: 0.6rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+
+.text ul li strong {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.image img{
+    border-radius: 0 10px 10px 0;
+    width: 100%;
+    height: 100%;
+    filter: hue-rotate(-10deg) sepia(800%) contrast(60%) saturate(600%)
+    hue-rotate(600deg);
+}
+
+.attribution{
+  margin-top: 20px;
+  color: white;
+}
+
+.attribution a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
+
+.attribution a:hover{
+    cursor: pointer;
+    color:cornflowerblue;
+}
+
+@media (max-width: 863px){
+    .text span {
+        font-size: 1.9rem;
+    }
+    .text ul li{
+        margin-right: 20px;
+        
+    }
+
+    .text p {
+        width: 80%;
+        font-size: 0.7rem;
+    }
+} 
+
+@media(max-width: 728px) {
+    .container {
+        border-radius: 20px;
+        margin-top: 550px;
+        display: flex;
+        width: 80vw;
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .text {
+        width: 92%;
+        height: 100%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text span {
+        margin: 0 auto;
+        font-size: 3.0rem;
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+    .text p {
+        margin: 0 auto;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2rem;
+        opacity: 0.5;
+    }
+
+    .text ul {
+        margin-top: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text ul li {
+        font-size: 1rem;
+        margin-bottom: 2.0rem;
+        opacity: 0.6;
+        letter-spacing: 0.2rem;
+        
+    }
+
+    .text ul li strong {
+        font-size: 2.1rem;
+    }
+
+    .attribution p {
+        
+        font-size: 1.2rem;
+    }
+
+    .attribution p a {
+        font-size: 1.2rem;
+    }
+}
